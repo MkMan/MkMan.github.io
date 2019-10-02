@@ -1,6 +1,5 @@
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom';
-// import AboutMe from './components/about-me/controller';
 
 import './index.scss';
 import myImage from './assets/images/me.jpg';
@@ -16,7 +15,6 @@ class AppShell extends React.Component {
           <img className="user-picture" src={myImage} alt=""></img>
         </div>
         <h2 className="section-heading">About me</h2>
-        {/* <AboutMe /> */}
       </div>
     );
   }
