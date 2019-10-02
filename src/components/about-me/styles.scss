@@ -1,0 +1,7 @@
+@import '../../vendor/prism/prism-themes/prism-vs.css';
+@import '../../styles/shared.scss';
+
+pre {
+  border-radius: 0.5 * $scale-unit;
+  box-shadow: 1px 1px $scale-unit $dark_shade;
+}
