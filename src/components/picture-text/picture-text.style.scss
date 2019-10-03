@@ -1,5 +1,11 @@
 @import '../../styles/shared.scss';
 
-p {
-  color: red;
+.picture-text-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture-text-logo {
+  width: 20 * $scale-unit;
 }

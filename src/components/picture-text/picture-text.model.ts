@@ -1,4 +1,6 @@
+import { AvailableTechLogos } from './logo/logo.model';
+
 export interface PictureTextProps {
   text: string,
-  imagePath: string
+  logo: AvailableTechLogos
 }

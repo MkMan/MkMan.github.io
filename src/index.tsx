@@ -1,9 +1,10 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 
+import { PictureTextComponent } from './components/picture-text/picture-text.comp';
+
 import './index.scss';
 import myImage from './assets/images/me.jpg';
-import { PictureTextComponent } from './components/picture-text/picture-text.comp';
 
 class AppShell extends React.Component {
 
@@ -16,7 +17,8 @@ class AppShell extends React.Component {
           <img className="user-picture" src={myImage} alt=""></img>
         </div>
         <h2 className="section-heading">About me</h2>
-        <PictureTextComponent text="hello" imagePath="sdds"/>
+        <PictureTextComponent text="hello" logo="angular"/>
+        <PictureTextComponent text="goodbye" logo="js"/>
       </div>
     );
   }
