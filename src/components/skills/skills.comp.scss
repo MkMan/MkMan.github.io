@@ -3,8 +3,23 @@
 .skills-component {
   display: flex;
   flex-direction: column;
+  line-height: 3.5 * $scale-unit;
 
   > * {
     margin-bottom: 5 * $scale-unit;
+  }
+}
+
+.other-skills {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+
+  li {
+    padding: 0 (2 * $scale-unit);
+    font-size: 18px;
+    color: $dark_accent;
   }
 }
