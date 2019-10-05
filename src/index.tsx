@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 
-import { PictureTextComponent } from './components/picture-text/picture-text.comp';
+import { SkillsComponent } from './components/skills/skills.comp';
 
 import './index.scss';
 import myImage from './assets/images/me.jpg';
@@ -12,13 +12,12 @@ class AppShell extends React.Component {
     return (
       <div className="app-component">
         <h1 className="user-name">Mustafa Mansour</h1>
-        <h3 className="user-desc">Software developer</h3>
+        <h2 className="user-desc">Software developer</h2>
         <div className="user-picture-container">
           <img className="user-picture" src={myImage} alt=""></img>
         </div>
-        <h2 className="section-heading">About me</h2>
-        <PictureTextComponent text="hello" logo="angular"/>
-        <PictureTextComponent text="goodbye" logo="js"/>
+        <h3 className="section-heading">Skills</h3>
+        <SkillsComponent />
       </div>
     );
   }

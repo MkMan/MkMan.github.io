@@ -7,5 +7,11 @@
 }
 
 .picture-text-logo {
-  width: 20 * $scale-unit;
+  width: 15 * $scale-unit;
+}
+
+.picture-text-label {
+  margin-top: 2 * $scale-unit;
+  font-size: 20px;
+  color: $dark_shade;
 }

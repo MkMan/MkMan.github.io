@@ -14,7 +14,7 @@ export class PictureTextComponent extends React.Component {
     return  (
       <div className="picture-text-component">
         <LogoComponent logo={this.props.logo} className="picture-text-logo"/>
-        <label>Angular</label>
+        <label className="picture-text-label">{this.props.text}</label>
       </div>
     );
   }
