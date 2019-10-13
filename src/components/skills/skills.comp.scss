@@ -1,5 +1,12 @@
 @import '../../styles/shared.scss';
 
+.section-heading {
+  @include heading-font-family();
+  font-size: 20px;
+  color: $dark_shade;
+  margin-bottom: 2 * $scale-unit;
+}
+
 .skills-component {
   display: flex;
   flex-direction: column;

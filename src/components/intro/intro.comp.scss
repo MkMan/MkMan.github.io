@@ -1,0 +1,37 @@
+@import '../../styles/shared.scss';
+
+.intro-component-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.user-name {
+  @include heading-font-family();
+  font-size: 35px;
+  text-align: center;
+  color: $main_color;
+  // margin: (8 * $scale-unit) 0 (3 * $scale-unit) 0;
+}
+
+.user-desc {
+  @include heading-font-family();
+  font-size: 20px;
+  color: $dark_shade;
+  text-align: center;
+}
+
+.user-picture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: (6 * $scale-unit) 0;
+  width: 100%;
+}
+
+.user-picture {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%
+}

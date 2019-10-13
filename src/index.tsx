@@ -3,20 +3,15 @@ import ReactDOM from 'react-dom';
 
 import { SkillsComponent } from './components/skills/skills.comp';
 
+import { IntroComponent } from './components/intro/intro.comp';
 import './index.scss';
-import myImage from './assets/images/me.jpg';
 
 class AppShell extends React.Component {
 
-  render() {
+  public render() {
     return (
       <div className="app-component">
-        <h1 className="user-name">Mustafa Mansour</h1>
-        <h2 className="user-desc">Software developer</h2>
-        <div className="user-picture-container">
-          <img className="user-picture" src={myImage} alt=""></img>
-        </div>
-        <h3 className="section-heading">Skills</h3>
+        <IntroComponent/>
         <SkillsComponent />
       </div>
     );
@@ -25,5 +20,5 @@ class AppShell extends React.Component {
 
 ReactDOM.render(
   <AppShell />,
-  document.querySelector('app-root')
+  document.querySelector('app-root'),
 );

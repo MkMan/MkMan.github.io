@@ -8,6 +8,7 @@ export class SkillsComponent extends React.Component {
   public render() {
     return(
       <div className="skills-component">
+        <h3 className="section-heading">Skills</h3>
         <PictureTextComponent text="Angular" logo="angular"/>
         <PictureTextComponent text="JavaScript" logo="js"/>
         <ul className="other-skills">
