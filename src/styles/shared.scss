@@ -5,4 +5,16 @@ $main_color: #2892EE;
 $dark_accent: #6E6A80;
 $dark_shade:  #0E2152;
 
+$kek: black;
+
 $scale-unit: 8px;
+
+// Mixins
+@mixin heading-font-family {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+@mixin elevated {
+  z-index: 1;
+}

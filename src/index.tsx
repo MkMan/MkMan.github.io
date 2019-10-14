@@ -1,20 +1,17 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 
+import { IntroComponent } from './components/intro/intro.comp';
+import { ParticlesComponent } from './components/particles/particles.comp';
 import './index.scss';
-import myImage from './assets/images/me.jpg';
 
 class AppShell extends React.Component {
 
-  render() {
+  public render() {
     return (
       <div className="app-component">
-        <h1 className="user-name">Mustafa Mansour</h1>
-        <h3 className="user-desc">Software developer</h3>
-        <div className="user-picture-container">
-          <img className="user-picture" src={myImage} alt=""></img>
-        </div>
-        <h2 className="section-heading">About me</h2>
+        <ParticlesComponent/>
+        <IntroComponent/>
       </div>
     );
   }
@@ -22,5 +19,5 @@ class AppShell extends React.Component {
 
 ReactDOM.render(
   <AppShell />,
-  document.querySelector('app-root')
+  document.querySelector('app-root'),
 );
